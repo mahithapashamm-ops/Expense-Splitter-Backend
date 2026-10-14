@@ -1,3 +1,4 @@
+
 package ExpenseSplitter.controller;
 
 import ExpenseSplitter.dto.AuthResponse;
@@ -12,7 +13,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://expense-splitter-frontend-onip.vercel.app"
+})
 public class AuthController {
 
     private final AuthService authService;
