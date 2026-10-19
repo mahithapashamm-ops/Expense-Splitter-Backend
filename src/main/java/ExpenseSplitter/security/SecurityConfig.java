@@ -23,8 +23,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import ExpenseSplitter.security.JwtAuthenticationFilter;
-import ExpenseSplitter.service.CustomUserDetailsService;
-
+import ExpenseSplitter.security.CustomUserDetailsService;
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
